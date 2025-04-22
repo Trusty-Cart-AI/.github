@@ -1,66 +1,59 @@
-# Trusty Cart AI: Enhancing Online Shopping Security
+# 🛒 Trusty Cart AI: Enhancing Online Shopping Security
 
-## Overview
-**Trusty Cart AI** is a Chrome-based extension designed to provide an extra layer of security for online shoppers. By utilizing advanced **Natural Language Processing (NLP)** and **Digital Image Processing (DIP)** technologies, this extension helps detect and prevent scams, ensuring users have a safe and trustworthy shopping experience.
-
-## Key Features
-- **Spam Detection**: Utilizes NLP algorithms to analyze product reviews and comments, identifying suspicious or fraudulent content.
-- **Image Verification**: Compares product images posted by sellers with those shared in user reviews, ensuring authenticity and accuracy.
-- **Real-time Alerts**: Sends notifications about potential scams and fraudulent activities during the shopping process.
-- **Seamless Integration**: Integrates directly with supported e-commerce platforms for a smooth, user-friendly experience.
-- **User Feedback**: Provides mechanisms for users to submit feedback, helping improve the accuracy of fraud detection over time.
-- **Customizable Security Settings**: Allows users to personalize fraud detection parameters based on their shopping preferences.
-
-## Motivation
-Online shopping is prone to scams, counterfeit products, and misleading information. **Trusty Cart AI** addresses these challenges by empowering users with real-time insights, helping them make safer, more informed purchases.
-
-## Challenges
-- Developing effective spam detection algorithms using NLP.
-- Creating reliable image recognition techniques.
-- Seamlessly integrating with various e-commerce platforms.
-- Continuously evolving to counter new and emerging scam tactics.
-
-## Project Goals
-- Enhance online shopping security by reducing the risk of scams and fraudulent transactions.
-- Increase user trust by providing reliable tools to evaluate the authenticity of products.
-- Foster informed decision-making through real-time feedback and alerts.
-
-## Technology Stack
-- **Natural Language Processing (NLP)**: For analyzing text-based reviews and detecting spam.
-- **Digital Image Processing (DIP)**: To compare and verify images between product listings and user reviews.
-- **Chrome Extension API**: For integration with browsers and e-commerce platforms.
-
-## Installation
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/[username]/trusty-cart-ai.git
-    ```
-
-2. **Load the extension in Chrome**:
-    - Go to `chrome://extensions/`
-    - Enable **Developer mode**
-    - Click on **Load unpacked** and select the `trusty-cart-ai` folder.
-
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. **Fork the repository**.
-2. **Create a feature branch**:
-    ```bash
-    git checkout -b feature-branch
-    ```
-3. **Commit changes**:
-    ```bash
-    git commit -m "Add new feature"
-    ```
-4. **Push the branch**:
-    ```bash
-    git push origin feature-branch
-    ```
-5. **Submit a pull request**.
+## 📌 Overview  
+**Trusty Cart AI** is a lightweight Chrome extension that empowers users to verify the authenticity of product reviews on e-commerce platforms. By combining image similarity detection and advanced natural language processing, the extension flags misleading or fake reviews in real-time—enhancing user trust and shopping safety.
 
 ---
+
+## 🚀 Key Features  
+- 🖼️ **Image Similarity Model**: Compares uploaded product images with user-shared images in reviews.  
+- 💬 **Sentiment & AI Text Analysis**: Analyzes review tone and detects AI-generated or misleading comments.  
+- 🧾 **Spam Review Detection**: Flags untrustworthy reviews in **RED**, and highlights genuine reviews in **GREEN**.  
+- 🎯 **Fixed Similarity Threshold**: Uses a 60% image similarity score to validate visual authenticity.  
+- 🎨 **CSS Injection**: Alters review styling on the e-commerce page using temporary DOM/CSS changes for clarity.  
+
+---
+
+## 💡 Motivation  
+The growing prevalence of fake reviews on online shopping platforms misleads users and distorts product reputations. Trusty Cart AI was created to address this problem by giving shoppers a simple, automated way to verify reviews, ultimately promoting transparency and helping people make smarter buying decisions.
+
+---
+
+## ⚠️ Challenges  
+- Efficiently performing resource-heavy tasks like image and text analysis in a browser environment.  
+- Adapting to dynamic structures of modern e-commerce websites.  
+- Ensuring fast and accurate results while minimizing resource usage.
+
+---
+
+## 🎯 Project Goals  
+- ✅ Enhance the security and transparency of online shopping  
+- ✅ Improve user confidence in product reviews  
+- ✅ Seamless integration with major e-commerce sites  
+- ✅ Detect misleading, AI-generated, or spammy reviews with high accuracy
+
+---
+
+## 🧰 Technology Stack  
+- **Frontend**: Chrome Extension (HTML, CSS, JavaScript)  
+- **Image Processing**: CNN-based model for similarity scoring  
+- **Text Analysis**: Bi-LSTM or transformer models for sentiment and AI text detection  
+- **Other**:  
+  - Browser APIs  
+  - CSS Injection  
+  - Optional future backend for cloud-based processing
+
+---
+
+## 🛠️ Installation
+
+Follow the steps below to install and run Trusty Cart AI locally:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/trusty-cart-ai.git
+   cd trusty-cart-ai
+
+
 
 Thank you for contributing to **Trusty Cart AI** and helping us make online shopping safer for everyone!
